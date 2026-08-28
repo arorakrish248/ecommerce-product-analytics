@@ -52,6 +52,21 @@ Charts generated directly from the database and saved in `reports/charts/`:
 
 ---
 
+
+---
+
+## 🛠️ Technologies & Tools Used
+
+| Layer | Tool / Technology | Purpose in Project |
+| :--- | :--- | :--- |
+| **Relational Database** | **PostgreSQL (pgAdmin 4)** | Production Star Schema modeling, multi-table joins, constraints, and query execution. |
+| **Local SQL Engine** | **DuckDB** | Fast, zero-setup local SQL analytical engine for running automated test suites in seconds. |
+| **Data Processing** | **Python (Pandas, NumPy)** | Data cleaning, datetime parsing, feature engineering (transit lead times, delay flags). |
+| **Data Visualization** | **Matplotlib & Seaborn** | Generating publication-quality cohort heatmaps, Pareto curves, and CSAT degradation charts. |
+| **Statistical Analysis** | **SciPy (`scipy.stats`)** | Hypothesis testing (Welch’s two-sample t-test on delivery delays vs. CSAT ratings). |
+| **Interactive Notebook** | **Jupyter Notebook** | Exploratory data analysis, diagnostic walkthroughs, and executive charting. |
+| **Version Control** | **Git & GitHub** | Project management, commit history, and public portfolio documentation. |
+
 ## 🗄️ Database Architecture
 
 The dataset is structured as a relational Star Schema (`sql/schema.sql`):
